@@ -4,7 +4,6 @@ on: [ push ]
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v3
